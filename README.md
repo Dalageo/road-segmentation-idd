@@ -53,7 +53,7 @@ Below is an example of a road image and its corresponding mask aligned pixel-wis
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/Dalageo/IDDRoadSegmentation.git
+   git clone https://github.com/Dalageo/road-segmentation-idd.git
 
 2. **Navigate to the cloned directory**:
    ```sh

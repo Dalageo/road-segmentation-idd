@@ -22,6 +22,8 @@ This project develops a binary segmentation model capable of distinguishing betw
 
 More specifically, the segmentation process is based on a [U-Net architecture](https://arxiv.org/pdf/1505.04597v1), imported from the [segmentation_models](https://github.com/qubvel-org/segmentation_models.pytorch) PyTorch library, which uses an EfficientNet backbone pre-trained on ImageNet. To improve its performance and ensure robustness across diverse scenarios, several data augmentation techniques are employed during training. These techniques include horizontal and vertical flips, as well as brightness adjustments, enabling the model to effectively learn from a more varied dataset and generalize better to unseen images, while accounting for the complexity and variability inherent in real-world urban environments.
 
+<br>
+
 ## Dataset Description
 
 The dataset used in this project is the [Indian Driving Dataset (IDD)](https://www.kaggle.com/datasets/mitanshuchakrawarty/new-idd-dataset/data), which consists of road images and their corresponding segmentation masks. This dataset is specifically designed for binary segmentation tasks, such as distinguishing between **Road** and **Non-Road** areas. All images and masks have been resized to uniform dimensions of **512x512 pixels**. The dataset is organized into two folders:
@@ -47,9 +49,11 @@ Below is an example of a road image and its corresponding mask aligned pixel-wis
   <img src="https://github.com/user-attachments/assets/c9830213-1fb3-469c-a988-d822c10cfe68" alt="Overlay-mask" width="800">
 </div>
 
+<br>
+  
 ## Setup Instructions
 
-### <img src="https://github.com/user-attachments/assets/8d36d1a5-e9b1-40d1-97c9-3d4ca49e9c95" alt="Local PC" width="18" height = "16" /> **Local Environment Setup**
+### <img src="https://github.com/user-attachments/assets/8d36d1a5-e9b1-40d1-97c9-3d4ca49e9c95" alt="Local PC" width="18" /> **Local Environment Setup**
 
 1. **Clone the repository**:
    ```sh
@@ -65,6 +69,8 @@ Below is an example of a road image and its corresponding mask aligned pixel-wis
    
 5. **Run the cells sequentially to reproduce the results.**
 
+<br>
+
 ## Acknowledgments
 Firstly, I would like to thank Olaf Ronneberger, Philipp Fischer, and Thomas Brox for introducing U-Net in their 2015 paper, *["U-Net: Convolutional Networks for Biomedical Image Segmentation."](https://arxiv.org/abs/1505.04597)*. 
 
@@ -76,6 +82,8 @@ Additionally, special thanks to [Pavel Iakubovskii](https://github.com/qubvel) f
   </a>
 </div>
 
+<br>
+
 ## License
 The segmentation library is primarily licensed under the [MIT License](https://github.com/qubvel-org/segmentation_models.pytorch/blob/main/LICENSE), with some files under other licenses. Refer to the [LICENSES](https://github.com/qubvel-org/segmentation_models.pytorch/blob/main/licenses/LICENSES.md) directory and file statements for details, especially regarding commercial use. Meanwhile, the provided notebook, and accompanying documentation, are licensed under the [AGPL-3.0 license](https://www.gnu.org/licenses/agpl-3.0.en.html). AGPL-3.0 license was chosen to promote open collaboration, ensure transparency, and allow others to freely use, modify, and contribute to the work. 
 
@@ -83,8 +91,8 @@ Any modifications or improvements must also be shared under the same license, wi
 
 <div align="center">
   <br>
-  <a href="https://github.com/qubvel-org/segmentation_models.pytorch/blob/main/LICENSE" style="margin: 0 10px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg" alt="MIT-Logo" width="110"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/qubvel-org/segmentation_models.pytorch/blob/main/LICENSE">
+    <img src="https://github.com/user-attachments/assets/71b53073-599e-4b9b-b637-b06afd1ee24c" alt="MIT-Logo" width="100"></a>&nbsp;&nbsp;&nbsp;
   <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">
     <img src="https://github.com/user-attachments/assets/f3c6face-aa86-45da-8d20-d8ae25e49e28" alt="AGPLv3-Logo" width="200""></a>
 </div>
